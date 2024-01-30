@@ -197,9 +197,6 @@ export default () => {
     const [dataLoaded, setDataLoaded] = useState(false)
 
 	useEffect(() => {
-		document.title = 'South Park Game'		
-		window.history.replaceState(null, "South Park Game", '/projects/south-park-game')
-
         if(window.innerWidth < 992) setScreenError(true)
         setDataLoaded(true)
 	}, [])
