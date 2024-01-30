@@ -1,0 +1,117 @@
+.slot-bonus-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 3003;
+}
+
+.slot-bonus-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--dark);
+    opacity: 0.2;
+    z-index: 1;
+}
+
+.slot-bonus-content {
+    width: 600px;
+    height: 700px;
+    z-index: 2;
+}
+
+.slot-bonus-content > div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 517px;
+    background-color: #008bb0;
+    border-radius: 10px;
+}
+
+.circle-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+  
+.circle {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    transform: rotate(0deg);
+    transition: transform 3s ease-in-out;
+    background-color: transparent;
+}
+
+.segment {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    clip-path: polygon(50% 50%, 0% 0%, 100% 0%);
+    transform-origin: 50% 50%;
+    z-index: 3004;
+}
+  
+.segment:nth-of-type(1) {
+    transform: rotate(0deg);
+    background-color: #ff6d00;
+}
+
+.segment:nth-of-type(2) {
+    transform: rotate(72deg);
+    background-color: #2a6f97;
+}
+
+.segment:nth-child(3) {
+    transform: rotate(144deg);
+    background-color: #c9184a;
+}
+
+.segment:nth-child(4) {
+    transform: rotate(216deg);
+    background-color: #9d4edd;
+}
+
+.segment:nth-child(5) {
+    transform: rotate(288deg);
+    background-color: #06d6a0;
+}
+  
+.winner {
+    background-color: #bfd200;
+}
+  
+.spinning {
+    transform: rotate(720deg);
+}
+
+.slot-bonus-content h3 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0;
+    padding: 20px 0;
+}
+
+.slot-bonus-btn {
+    font-size: 15px;
+    font-weight: 700;
+    background-color: #ffd500;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 15px;
+    margin-top: 40px;
+    width: 120px;
+}

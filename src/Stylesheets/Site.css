@@ -1,0 +1,18 @@
+:root {
+	--green: #57cc99;
+	--dark: #040f0f;
+    --pri: #e2e8f0;
+    --sec: #bec3cc;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins';
+    box-sizing: border-box;
+}
+
+.site-shell {
+    min-height: 100vh;
+    overflow: hidden;
+}
